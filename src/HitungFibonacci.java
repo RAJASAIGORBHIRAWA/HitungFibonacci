@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
+import java.util.Scanner;
 
 public class HitungFibonacci {
     public static void tampilJudul(String identitas) 
@@ -17,6 +17,16 @@ public class HitungFibonacci {
         String identitas = "Rajasa Igor Bhirawa / X RPL 3 / 33";
         
         tampilJudul(identitas);
+        
+        int n = tampilInput();
     }
-    
+    private static int tampilInput() {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Bilangan ke-: ");
+        int n = scanner.nextInt();
+        
+        return n;
+        
+    }
 }
