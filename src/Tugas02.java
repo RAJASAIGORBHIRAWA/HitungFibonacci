@@ -15,6 +15,15 @@ public class Tugas02 {
         
         Proses(berat, Berat, Harga);
     }
+    private static int input()
+    {
+        Scanner baca = new Scanner(System.in);
+        
+        System.out.print("berat barang : ");
+        int berat = baca.nextInt();
+        
+        return berat;
+    }
     
     
     
